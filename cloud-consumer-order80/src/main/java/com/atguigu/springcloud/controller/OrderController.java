@@ -31,4 +31,13 @@ public class OrderController {
         System.out.println("result = " + result);
         return result;
     }
+
+
+    //==> zipkin+sleuth
+    @GetMapping("/consumer/payment/zipkin")
+    public String paymentZipkin(){
+        String result = restTemplate.getForObject(PATH+"/payment/zipkin/", String.class);
+        return result;
+    }
+
 }

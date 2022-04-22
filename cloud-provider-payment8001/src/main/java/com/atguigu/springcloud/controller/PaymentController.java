@@ -41,4 +41,11 @@ public class PaymentController {
             return new CommonResult(444,"查询数据不存在");
         }
     }
+
+
+    @GetMapping("/payment/zipkin")
+    public String paymentZipkin(){
+        return "hi ,i'am paymentzipkin server，welcome to atguigu，O(∩_∩)O哈哈~";
+    }
+
 }
