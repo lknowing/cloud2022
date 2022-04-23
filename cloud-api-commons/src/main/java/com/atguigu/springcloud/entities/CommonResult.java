@@ -13,7 +13,7 @@ import java.io.Serializable;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class CommonResult <T> implements Serializable {
+public class CommonResult<T> implements Serializable {
 
     private Integer code;
     private String message;
